@@ -1,0 +1,18 @@
+[*.cs]
+
+# IDE0090: Use 'new(...)'
+dotnet_diagnostic.IDE0090.severity = none
+
+csharp_new_line_before_open_brace = none
+
+# BepInEx002: Classes with BepInPlugin attribute must inherit from BaseUnityPlugin
+dotnet_diagnostic.BepInEx002.severity = none
+
+# CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+dotnet_diagnostic.CS8632.severity = none
+
+# IDE0160: Convert to block scoped namespace
+dotnet_diagnostic.IDE0160.severity = none
+
+# IDE0130: Namespace does not match folder structure
+dotnet_diagnostic.IDE0130.severity = none
