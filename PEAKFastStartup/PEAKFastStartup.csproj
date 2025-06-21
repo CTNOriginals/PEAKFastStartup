@@ -2,10 +2,10 @@
 	
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
-		<AssemblyName>com.CTNOriginals.peak.PEAK_TEMPLATE</AssemblyName>
-		<Product>PEAK_TEMPLATE</Product>
-		<Description>{SHORT_MOD_DESCRIPTION}</Description>
-		<Version>0.0.1</Version>
+		<AssemblyName>com.CTNOriginals.peak.PEAKFastStartup</AssemblyName>
+		<Product>PEAKFastStartup</Product>
+		<Description>Skip the lengthy splash screen when the game starts and start loading the game right away!</Description>
+		<Version>1.0.0</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
 		<RestoreAdditionalProjectSources>
@@ -13,7 +13,7 @@
 			https://nuget.bepinex.dev/v3/index.json;
 			https://nuget.samboy.dev/v3/index.json
 		</RestoreAdditionalProjectSources>
-		<RootNamespace>PEAK_TEMPLATE</RootNamespace>
+		<RootNamespace>PEAKFastStartup</RootNamespace>
 	</PropertyGroup>
 	
 	<ItemGroup>

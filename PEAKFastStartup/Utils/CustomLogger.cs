@@ -1,5 +1,5 @@
 using System;
-using PEAK_TEMPLATE;
+using PEAKFastStartup;
 using UnityEngine;
 
 namespace PEAKProto.Utils;
@@ -16,7 +16,7 @@ public static class CLogger {
 	public static void LogException(string message, Exception exception) { SendLog(message, "LogException", exception: exception); }
 
 	private static void SendLog(string message, string level = null, Exception exception = null) {
-		// if (!Plugin.DebugMode && (level == "LogDebug" || level == "LogInfo")) return;
+		if (!Plugin.DebugMode && (level == "LogDebug" || level == "LogInfo")) return;
 
 		switch(level) {
 			case "LogInfo": 	Plugin.Logger.LogInfo(message); 	break;
