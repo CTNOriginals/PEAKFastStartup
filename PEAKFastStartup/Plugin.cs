@@ -13,9 +13,11 @@ public class Plugin : BaseUnityPlugin {
 
 	public static bool DebugMode = false;
 
-	public static new ConfigFile Config = new ConfigFile(Paths.ConfigPath + "\\" + MyPluginInfo.PLUGIN_GUID + ".cfg", true);
-	public static ConfigEntry<bool> SkipSplashScreens;
-	public static ConfigEntry<bool> LoadIslandOnStart;
+	// public static new ConfigFile Config = new ConfigFile(Paths.ConfigPath + "\\" + MyPluginInfo.PLUGIN_GUID + ".cfg", true);
+	// public static ConfigEntry<bool> SkipSplashScreens;
+	public static bool SkipSplashScreens;
+	// public static ConfigEntry<bool> LoadIslandOnStart;
+	public static bool LoadIslandOnStart;
 
 	private void Awake() {
 		// Plugin startup logic
@@ -37,13 +39,13 @@ public class Plugin : BaseUnityPlugin {
 			"SkipSplashScreens",
 			true,
 			"Wether or not to automatically skip the splash screens that the game shows on startup."
-		);
+		).Value;
 		LoadIslandOnStart = Config.Bind(
 			"General",
 			"LoadIslandOnStart",
 			false,
 			"Wether or not to load a solo play game right after the game starts, skipping the main menu and airport entirely."
-		);
+		).Value;
 
 		CLogger.LogInfo($"SkipSplashScreens: {SkipSplashScreens}");
 		CLogger.LogInfo($"LoadIslandOnStart: {LoadIslandOnStart}");
