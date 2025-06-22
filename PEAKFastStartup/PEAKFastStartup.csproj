@@ -26,8 +26,8 @@
 	
 	<ItemGroup>
 		<Reference Include="Assembly-CSharp" HintPath="$(ManagedDirectory)Assembly-CSharp.dll" Publicize="true"/>
-		<!-- <Reference Include="Zorro.Core.Runtime" HintPath="$(ManagedDirectory)Zorro.Core.Runtime.dll" Publicize="true"/> -->
-		<!-- <Reference Include="PhotonUnityNetworking" HintPath="$(ManagedDirectory)PhotonUnityNetworking.dll" Publicize="true"/> -->
+		<Reference Include="Zorro.Core.Runtime" HintPath="$(ManagedDirectory)Zorro.Core.Runtime.dll" Publicize="true"/>
+		<Reference Include="PhotonUnityNetworking" HintPath="$(ManagedDirectory)PhotonUnityNetworking.dll" Publicize="true"/>
 		<!-- <Reference Include="PhotonRealtime" HintPath="$(ManagedDirectory)PhotonRealtime.dll" Publicize="true"/> -->
 		<!-- <Reference Include="UnityEngine.UI" HintPath="$(ManagedDirectory)UnityEngine.UI.dll" Publicize="true"/> -->
 	</ItemGroup>

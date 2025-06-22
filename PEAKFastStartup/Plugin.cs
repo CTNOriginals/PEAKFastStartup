@@ -22,14 +22,11 @@ public class Plugin : BaseUnityPlugin {
 		Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} {MyPluginInfo.PLUGIN_VERSION} is loaded! ({(DebugMode ? "Debug" : "Release")})");
 
 		Harmony.PatchAll();
+		Start();
+	}
+
 	}
 }
 
-[HarmonyPatch(typeof(Pretitle))]
-public static class PretitlePatch {
-	[HarmonyPrefix, HarmonyPatch(nameof(Pretitle.Update))]
-	public static bool UpdatePatch(ref Pretitle __instance) {
-		__instance.allowedToSwitch = true;
-		return false;
-	}
-}
+//? Idea for another mod
+//> Map/BL_Airport/Fences/Check In desk/AirportGateKiosk
