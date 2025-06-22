@@ -10,11 +10,11 @@ For suggestions or issues, feel free to open an issue on the [GitHub repository]
 4. Move the `BepInEx/config/com.CTNOriginals.peak.PEAKFastStartup.cfg` file to `BepInEx/config` folder.
 5. Launch the game and start wondering why it took you so long to find this mod!
 
+### Thunderstore
+Install using the Thunderstore Mod Manager: https://new.thunderstore.io/c/peak/p/CTNOriginals/PEAKFastStartup/
+
 ## Configuration
 | Option | Description | Default |
 | ------ | ----------- | ------- |
 | **SkipSplashScreens** | Wether or not to automatically skip the splash screens that the game shows on startup. | `true` |
 | **LoadIslandOnStart** | Wether or not to load a solo play game right after the game starts, skipping the main menu and airport entirely. | `false` |
-
-### Thunderstore
-Install using the Thunderstore Mod Manager: https://new.thunderstore.io/c/peak/p/CTNOriginals/PEAKFastStartup/
