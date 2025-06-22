@@ -16,7 +16,7 @@ public static class SceneLoader {
 
 	public static void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
 		CLogger.LogInfo($"Scene Loaded: {scene.name} | {mode}");
-		if (scene.name == "Pretitle") {
+		if ((Plugin.SkipSplashScreens && scene.name == "Pretitle") || (!Plugin.SkipSplashScreens && scene.name == "Title")) {
 			CLogger.LogInfo("Skipping pretitle, loading main menu");
 			SceneManager.LoadScene("WilIsland");
 		}
