@@ -5,7 +5,7 @@
 		<AssemblyName>com.CTNOriginals.peak.PEAKFastStartup</AssemblyName>
 		<Product>PEAKFastStartup</Product>
 		<Description>Skip the lengthy splash screen when the game starts and start loading the game right away!</Description>
-		<Version>1.1.1</Version>
+		<Version>1.1.2</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
 		<RestoreAdditionalProjectSources>
